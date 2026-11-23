@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
+	--color-leaf: #1f8a3b;
+	--color-leaf-dark: #146b2c;
+	--color-amber: #f08a12;
+	--color-ink: #1c2b22;
+	--color-mist: #f4f6f1;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-sans);
+	background: #dfe8d8;
+	color: var(--color-ink);
+}

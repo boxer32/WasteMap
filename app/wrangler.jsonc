@@ -1,0 +1,26 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "wastemap-salui",
+	"compatibility_date": "2026-09-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "wastemap-salui",
+			// OWNER TO FILL: replace with the id printed by `wrangler d1 create wastemap-salui`.
+			// Local dev (vite dev, db:migrate:local) ignores this value.
+			"database_id": "00000000-0000-0000-0000-000000000000",
+			"migrations_dir": "migrations"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "IMAGES",
+			"bucket_name": "wastemap-salui-images"
+		}
+	],
+	"vars": {
+		// OWNER TO FILL (optional): set a long random secret with `wrangler secret put RATE_SALT`.
+		// Falls back to a per-day derived salt stored in D1 if unset.
+	}
+}

@@ -1,0 +1,27 @@
+-- DEMO DATA, local only. Applied by `npm run db:seed:local`; NEVER run against --remote.
+-- Images do not exist in R2 (key seed/none.jpg), so demo cards show no photo.
+INSERT OR IGNORE INTO reports (id, category, latitude, longitude, location_source, public_latitude, public_longitude, image_key, submitted_at, status, resolved_at, tracking_token_hash) VALUES
+('d23f0824-128b-4f33-8c5c-7fd0a6a3a450','overflow',10.834588,99.187161,'gps',10.834588,99.187948,'seed/none.jpg','2026-11-22T14:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-0'),
+('1600a35a-0999-40d8-b6f6-75cc81e74ef5','missed_collection',10.841885,99.204693,'gps',10.842655,99.204624,'seed/none.jpg','2026-11-11T13:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-1'),
+('d3ac94af-0f21-4db6-acad-4a268d116ece','uncollected',10.827619,99.213275,'gps',10.827035,99.213380,'seed/none.jpg','2026-11-22T12:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-2'),
+('93bd04cf-0fd6-40f1-b29d-0da9953f48f1','illegal_dumping',10.820116,99.198409,'gps',10.820062,99.197624,'seed/none.jpg','2026-11-11T11:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-3'),
+('4a23d596-2217-4ead-9bc4-96cb8e81973e','other',10.835479,99.221054,'gps',10.836218,99.221159,'seed/none.jpg','2026-11-11T10:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-4'),
+('ae97ba94-d0ed-482f-8f6d-05584ef8aa38','overflow',10.834301,99.187108,'gps',10.834529,99.187565,'seed/none.jpg','2026-11-21T09:39:45.000Z','resolved','2026-11-21T09:39:45.000Z','seed-not-a-real-token-hash-5'),
+('8c38fb29-18f1-45d2-9f55-7203301850c5','missed_collection',10.841465,99.205514,'gps',10.841102,99.206239,'seed/none.jpg','2026-11-22T08:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-6'),
+('6d76b07e-881e-4162-ae2e-b1547f150524','uncollected',10.827853,99.213880,'gps',10.827076,99.213654,'seed/none.jpg','2026-11-15T14:39:45.000Z','pending',NULL,'seed-not-a-real-token-hash-7'),
+('cb5c7427-3f98-4277-8cbd-87ad5c90a958','illegal_dumping',10.819345,99.198878,'gps',10.819712,99.199580,'seed/none.jpg','2026-11-21T13:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-8'),
+('7ebff206-8673-4721-8cdd-2055930d6eaf','other',10.836518,99.221091,'gps',10.835916,99.221553,'seed/none.jpg','2026-11-15T12:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-9'),
+('830e07bc-1e39-4f10-92bd-4acefaecbd38','overflow',10.835237,99.187381,'gps',10.835866,99.187601,'seed/none.jpg','2026-11-11T11:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-10'),
+('0a097c97-6bf4-4c69-bd2c-af82eeeacbe2','missed_collection',10.841564,99.205147,'gps',10.841700,99.204664,'seed/none.jpg','2026-11-22T10:39:45.000Z','resolved','2026-11-22T10:39:45.000Z','seed-not-a-real-token-hash-11'),
+('57124242-5051-41cc-917f-9acae01f5057','uncollected',10.828173,99.213807,'gps',10.827486,99.213671,'seed/none.jpg','2026-11-15T09:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-12'),
+('17f5e837-d708-40fe-919a-72d174c9df6a','illegal_dumping',10.819551,99.198328,'gps',10.819739,99.197612,'seed/none.jpg','2026-11-18T08:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-13'),
+('4f426dcb-b394-4b36-bb2d-420f0f88080b','other',10.836159,99.221763,'gps',10.836948,99.221635,'seed/none.jpg','2026-11-03T14:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-14'),
+('f0ce5835-05c6-4f07-98d5-563dab2cd31e','overflow',10.834525,99.187537,'gps',10.834751,99.188289,'seed/none.jpg','2026-11-03T13:39:45.000Z','pending',NULL,'seed-not-a-real-token-hash-15'),
+('c4aaeac1-37dc-46fb-8f17-a3007e62aa0a','missed_collection',10.841869,99.205577,'gps',10.841476,99.205926,'seed/none.jpg','2026-11-18T12:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-16'),
+('7f1b103c-df15-42b0-aab4-77d26415479c','uncollected',10.827157,99.213286,'gps',10.827658,99.213873,'seed/none.jpg','2026-11-22T11:39:45.000Z','resolved','2026-11-22T11:39:45.000Z','seed-not-a-real-token-hash-17'),
+('d1bc52d9-230d-477e-a225-71594720771f','illegal_dumping',10.818866,99.198043,'gps',10.818592,99.197416,'seed/none.jpg','2026-11-11T10:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-18'),
+('aec6f024-5bd8-4d40-bc89-1b4a6a50df4d','other',10.836782,99.221145,'gps',10.836982,99.220587,'seed/none.jpg','2026-11-11T09:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-19'),
+('a8948c89-3b61-4676-a6bb-7dbd2d1c9af0','overflow',10.835602,99.187161,'gps',10.835529,99.186305,'seed/none.jpg','2026-11-20T08:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-20'),
+('010c4759-482c-4cbc-8343-5cc52eae05cf','missed_collection',10.841319,99.205930,'gps',10.841903,99.206035,'seed/none.jpg','2026-11-21T14:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-21'),
+('20203626-f3fe-49c0-9190-88f590fbbd11','uncollected',10.827620,99.213481,'gps',10.828048,99.212859,'seed/none.jpg','2026-11-23T13:39:45.000Z','published',NULL,'seed-not-a-real-token-hash-22'),
+('cc4169a3-ae3a-4b7f-9fe0-1893f3aed0b6','illegal_dumping',10.819331,99.198794,'gps',10.818719,99.198529,'seed/none.jpg','2026-11-11T12:39:45.000Z','resolved','2026-11-11T12:39:45.000Z','seed-not-a-real-token-hash-23');
